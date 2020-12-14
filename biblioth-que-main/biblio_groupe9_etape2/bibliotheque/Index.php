@@ -13,6 +13,7 @@
     <h2>Bienvenue sur notre bibliothèque La baguette magique</h2>
     <p>Dans cette bibliothèque,vous trouverez les ouvrages des différentes oeuvres d'Harry Potter et des Animaux Fantastiques écrites par l'écrivaine J.K Rowling.</p>
     <p>Voici la liste des dix oeuvres que J.K Rowling a écrites ci-dessous:</p>
+    <p>Salut</p>
 
           <div style="background-image:fond.jpg">
             <a href="tome1.html">
