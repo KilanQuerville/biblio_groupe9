@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <metacharset="utf-8">
-        <link rel="stylesheet" href="biblio/tome2.css">
-    </head>
-    <body>
 <?php
-        require "tome2.html"?>
-        <a href="Index.html">
+require "biblio.php"
+?>
+    <body>
+        <a href="Index.php">
             <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="180" width="1300"></img></h1></a>
             
         <img src="Imgbiblio/tome2.jpg"alt="tome 2" width="170"height="230" p style="float:left;">

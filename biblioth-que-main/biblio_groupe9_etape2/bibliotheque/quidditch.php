@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <metacharset="utf-8">
-        <link rel="stylesheet" href="biblio/quidditch.css">
+<?php
+require "biblio.php"
+?>
         <body>
-            <?php require "quidditch.html"?>
-            <a href="Index.html">
+            <a href="Index.php">
                 <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="180" width="1300"></img></h1></a>
                 
             <img src="Imgbiblio/quidditch.jpg" p style="float: left;">Les règles du jeu, l'apparition du Vif d'or, l'évolution des balais, les équipes mythiques du monde entier et les matchs qui ont fait l'histoire : «Le Quidditch à travers les âges» est un ouvrage incontournable de la Bibliothèque de Poudlard.
@@ -21,5 +18,5 @@
             160 pages</p>
         
         </body>
-    </head>
+    
 </html>
