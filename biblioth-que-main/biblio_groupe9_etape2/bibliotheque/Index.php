@@ -6,7 +6,7 @@
 </head>
     <body>
         <?php
-        require "Index.html"
+        require "Index.html"?>
     <title>La Baguette magique</title>
     <a href="baguettemagique.html">
     <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="180" width="1300"></img></h1></a>
@@ -50,6 +50,6 @@
         </a>
           </div>
     <a href="https://wizardingworld.warnerbros.fr/store/baguette-magique-d-albus-dumbledore-avec-boite-ollivander.html"><p>Surtout,n'oubliez pas que c'est la baguette qui choisit le sorcier</p></a>
-?>
+
         </body>
 </html>

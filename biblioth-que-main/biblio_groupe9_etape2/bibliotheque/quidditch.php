@@ -4,7 +4,7 @@
         <metacharset="utf-8">
         <link rel="stylesheet" href="biblio/quidditch.css">
         <body>
-            <?php require "quidditch.html"
+            <?php require "quidditch.html"?>
             <a href="Index.html">
                 <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="180" width="1300"></img></h1></a>
                 
@@ -19,7 +19,7 @@
              Isbn 9782070625178 -
              Roman Fantastique - 
             160 pages</p>
-        ?>
+        
         </body>
     </head>
 </html>

@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        require "tome4.html"
+        require "tome4.html"?>
         <a href="Index.html">
             <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="180" width="1300"></img></h1></a>
             
@@ -20,6 +20,6 @@ Gallimard Jeunesse -
     Isbn 9782070585205 -
  Roman fantastique - 
 784 pages</p>
-            ?>
+            
 </body>
 </html>

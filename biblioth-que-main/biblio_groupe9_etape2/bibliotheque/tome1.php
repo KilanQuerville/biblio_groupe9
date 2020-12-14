@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        require "tome1.html"
+        require "tome1.html"?>
         <a href="Index.html">
             <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="180" width="1300"></img></h1></a>
     
@@ -18,6 +18,6 @@
             Isbn 9782070584628 -
             Roman fantastique - 
             320 pages </p></img>
-            ?>
+            
     </body>
 </html>
