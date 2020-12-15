@@ -13,7 +13,7 @@ require "biblio.php"
         J. K. Rowling -
 Gallimard Jeunesse -
 21 Juillet 2007 -
-     Isbn 9782070585229- 
+     Isbn  9782070615360 - 
      Roman fantastique - 
     896 pages</p>
         

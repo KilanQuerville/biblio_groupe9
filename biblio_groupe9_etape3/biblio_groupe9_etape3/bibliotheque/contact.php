@@ -1,6 +1,4 @@
-<?php
-require "Index.php"
-?>
+
     <body>
         <form method="post" action="receive.php">
             <fieldset>

@@ -30,3 +30,19 @@ p{
     font-size:2.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+nav {
+    background-color:bisque; /* #e7b467;#f7dc66;*/
+    display: flex;
+    margin-bottom: 10px;
+  }
+nav ul {
+    padding: 0;
+    flex: 2;
+    display: flex;
+  }
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
