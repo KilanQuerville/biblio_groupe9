@@ -14,7 +14,6 @@
     ?>
     <p>Dans cette bibliothèque,vous trouverez les ouvrages des différentes oeuvres d'Harry Potter et des Animaux Fantastiques écrites par l'écrivaine J.K Rowling.</p>
     <p>Voici la liste des dix oeuvres que J.K Rowling a écrites ci-dessous:</p>
-    
 
           <div>
             <a href="9782070584628.php">
@@ -50,6 +49,7 @@
             <a href="9782070625178.php">
         <img src="Imgbiblio/quidditch.jpg" alt="10eme livre"width="170" height="230"></img>
         </a>
+        
           </div>
     <a href="https://wizardingworld.warnerbros.fr/store/baguette-magique-d-albus-dumbledore-avec-boite-ollivander.html"><p>Surtout,n'oubliez pas que c'est la baguette qui choisit le sorcier</p></a>
 
