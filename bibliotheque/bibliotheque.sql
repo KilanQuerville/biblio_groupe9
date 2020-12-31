@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `auteur` (
   `idPersonne` int(11) NOT NULL,
   `idLivre` varchar(15) NOT NULL,
   `idRole` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+)ENGINE=MyISAM  DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `auteur`
@@ -48,7 +48,7 @@ INSERT INTO `auteur` (`idPersonne`, `idLivre`, `idRole`) VALUES
 (1, '9782070615360', 1),
 (1, '9782070625178', 1),
 (1, '9782075110709', 1),
-(1, '9782075121385', 1),
+(1, '9782075121385', 1);
 
 
 -- --------------------------------------------------------
