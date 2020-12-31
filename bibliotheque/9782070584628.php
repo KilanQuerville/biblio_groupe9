@@ -7,7 +7,7 @@ require "biblio.php"
     
         <img src="Imgbiblio/tome1.jpg"width="200" height="300"p style="float: left;">Potter est orphelin. Il mène une vie bien monotone chez son oncle et sa tante et leur horrible fils. Le jour de ses onze ans, son existence bascule : un géant vient le chercher pour l'emmener dans une école de sorciers où une place l'attend depuis toujours. Quel mystère entoure sa naissance? Et qui est l'effroyable mage dont personne n'aime prononcer le nom? Harry intègre le collège Poudlard et s'y plaît aussitôt. Voler à cheval sur des balais, jeter des sorts, devenir champion de Quidditch (une sorte de football pour sorciers), combattre les trolls: Harry Potter se révèle un sorcier vraiment doué. Il semble pourtant que tout le monde ne l'apprécie pas...</p></img>
         </img>
-        <table>
+        
     <?php
         
         $link = mysqli_connect("localhost","root","","bibliotheque");
@@ -28,6 +28,7 @@ require "biblio.php"
         if($result){
             while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
                 
+    
         echo "<p> Isbn:". $row["isbn"] ;
         echo " - Titre:" . $row["titre"] ;
         echo " - Editeur:" . $row["libelle"] ;
@@ -39,7 +40,7 @@ require "biblio.php"
         }
        
         ?> 
-   </table>
+   
     
             
     </body>
