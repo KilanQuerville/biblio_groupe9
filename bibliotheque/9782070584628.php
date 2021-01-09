@@ -28,18 +28,19 @@ require "biblio.php"
         if($result){
             while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
                 
-    
-        echo "<p> Isbn:". $row["isbn"] ;
+        echo "<p> Isbn:". $row["isbn"]  ;
         echo " - Titre:" . $row["titre"] ;
         echo " - Editeur:" . $row["libelle"] ;
         echo " - Annee:" . $row["annee"] ;
         echo " - Genre:" . $row["genre"] ;
         echo " - nbpages:" . $row["nbpages"] . "</p>";
+        
+
             }
             
         }
        
-        ?> 
+        ?>
    
     
             

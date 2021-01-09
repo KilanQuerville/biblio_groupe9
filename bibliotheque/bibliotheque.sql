@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 31 déc. 2020 à 12:18
+-- Généré le : sam. 09 jan. 2021 à 17:35
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -104,8 +104,9 @@ CREATE TABLE IF NOT EXISTS `livre` (
   `editeur` int(11) NOT NULL,
   `annee` int(11) DEFAULT NULL,
   `genre` int(11) DEFAULT NULL,
-  `langue` int(11) DEFAULT NULL,
   `nbpages` int(11) DEFAULT NULL,
+  `lien` varchar(50) NOT NULL,
+  `image` varchar(50) NOT NULL,
   PRIMARY KEY (`isbn`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -113,17 +114,17 @@ CREATE TABLE IF NOT EXISTS `livre` (
 -- Déchargement des données de la table `livre`
 --
 
-INSERT INTO `livre` (`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nbpages`) VALUES
-('9782070584628', 'Harry Potter a l\'Ecole des Sorciers', 1, 1997, 2, NULL, 308),
-('9782070584642', 'Harry Potter et La Chambre des Secrets', 1, 1997, 2, NULL, 368),
-('9782070584925', 'Harry Potter et le Prisonnier d\'Azkaban', 1, 1999, 2, NULL, 448),
-(' 9782070585205', 'Harry Potter et la Coupe de Feu', 1, 2000, 2, NULL, 784),
-('9782070585212', 'Harry Potter et l\'Ordre du Phenix', 1, 2003, 2, NULL, 1040),
-('9782070585229', 'Harry Potter et le Prince de Sang-Mele', 1, 2005, 2, NULL, 752),
-(' 9782070615360', 'Harry Potter et les Reliques de la Mort', 1, 2007, 2, NULL, 896),
-('9782075121385', 'Les Animaux Fantastiques', 1, 2001, 2, NULL, 384),
-('9782075110709', ' Les Crimes de Grindelwald', 1, 2018, 2, NULL, 320),
-('9782070625178', 'Le Quidditch a travers les ages', 1, 2001, 2, NULL, 160);
+INSERT INTO `livre` (`isbn`, `titre`, `editeur`, `annee`, `genre`, `nbpages`, `lien`, `image`) VALUES
+('9782070584628', 'Harry Potter a l\'Ecole des Sorciers', 1, 1997, 2, 308, '9782070584628.php', 'Imgbiblio/tome1.jpg'),
+('9782070584642', 'Harry Potter et La Chambre des Secrets', 1, 1997, 2, 368, '9782070584642.php', 'Imgbiblio/tome2.jpg'),
+('9782070584925', 'Harry Potter et le Prisonnier d\'Azkaban', 1, 1999, 2, 448, '9782070584925.php', 'Imgbiblio/tome3.jpg'),
+(' 9782070585205', 'Harry Potter et la Coupe de Feu', 1, 2000, 2, 784, '9782070585205.php', 'Imgbiblio/tome4.png'),
+('9782070585212', 'Harry Potter et l\'Ordre du Phenix', 1, 2003, 2, 1040, '9782070585212.php', 'Imgbiblio/tome5.jpg'),
+('9782070585229', 'Harry Potter et le Prince de Sang-Mele', 1, 2005, 2, 752, '9782070585229.php', 'Imgbiblio/tome6.jpg'),
+(' 9782070615360', 'Harry Potter et les Reliques de la Mort', 1, 2007, 2, 896, '9782070615360.php', 'Imgbiblio/tome7.jpg'),
+('9782075121385', 'Les Animaux Fantastiques', 1, 2001, 2, 384, '9782075121385.php', 'Imgbiblio/tome1animauxfant.png'),
+('9782075110709', ' Les Crimes de Grindelwald', 1, 2018, 2, 320, '9782075110709.php', 'Imgbiblio/tome2animauxfant.png'),
+('9782070625178', 'Le Quidditch a travers les ages', 1, 2001, 2, 160, '9782070625178.php', 'Imgbiblio/quidditch.jpg');
 
 -- --------------------------------------------------------
 

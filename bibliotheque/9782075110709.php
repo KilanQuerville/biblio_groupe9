@@ -5,7 +5,7 @@ require "biblio.php"
         <a href="Index.php">
             <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
             
-        <img src="Imgbiblio/tome2animaux fant.JPG" width="200" height="260" p style="float: left;">Quelques mois après sa capture, le célèbre sorcier Gellert Grindelwald s'évade comme il l'avait promis et de façon spectaculaire. Réunissant de plus en plus de partisans, il est à l'origine d'attaque d'humains normaux par des sorciers et seul celui qu'il considérait autrefois comme un ami, Albus Dumbledore, semble capable de l'arrêter.</p>
+        <img src="Imgbiblio/tome2animauxfant.png" width="200" height="260" p style="float: left;">Quelques mois après sa capture, le célèbre sorcier Gellert Grindelwald s'évade comme il l'avait promis et de façon spectaculaire. Réunissant de plus en plus de partisans, il est à l'origine d'attaque d'humains normaux par des sorciers et seul celui qu'il considérait autrefois comme un ami, Albus Dumbledore, semble capable de l'arrêter.</p>
         <p>
      
         <?php
