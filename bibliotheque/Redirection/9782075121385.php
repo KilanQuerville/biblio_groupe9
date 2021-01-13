@@ -6,7 +6,7 @@ require "../biblio.php"
         <a href="../Index.php">
             <h1 id="image"><img src="../Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
             
-        <img src="../Imgbiblio/9782075121385.png" width="200" height="300" p style="float: left;">Il est rare qu'une maison de sorciers ne compte pas dans sa bibliothèque un exemplaire des "Animaux fantastiques". Désormais et pour une période limitée dans le temps, les Moldus vont avoir à leur tour la possibilité d'apprendre où vit le Quintaped, ce que mange le Puffskein et pourquoi il vaut mieux ne pas laisser dans le jardin une soucoupe de lait destinée à un Knarl…</p>
+        <img src="../Imgbiblio/9782075121385.jpg" width="200" height="300" p style="float: left;">Il est rare qu'une maison de sorciers ne compte pas dans sa bibliothèque un exemplaire des "Animaux fantastiques". Désormais et pour une période limitée dans le temps, les Moldus vont avoir à leur tour la possibilité d'apprendre où vit le Quintaped, ce que mange le Puffskein et pourquoi il vaut mieux ne pas laisser dans le jardin une soucoupe de lait destinée à un Knarl…</p>
         
         <?php
         

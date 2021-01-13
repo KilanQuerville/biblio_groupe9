@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : sam. 09 jan. 2021 à 17:35
+-- Généré le : mer. 13 jan. 2021 à 19:25
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -39,16 +39,27 @@ CREATE TABLE IF NOT EXISTS `auteur` (
 --
 
 INSERT INTO `auteur` (`idPersonne`, `idLivre`, `idRole`) VALUES
+(2, '9782070584642 ', 2),
+(3, '9782070584628', 3),
+(2, '9782070584628', 2),
+(1, '9782070584642 ', 1),
 (1, '9782070584628', 1),
-(1, '9782070584642', 1),
 (1, '9782070584925', 1),
+(2, '9782070584925', 2),
+(2, '9782070585205', 2),
 (1, '9782070585205', 1),
 (1, '9782070585212', 1),
+(2, '9782070585212', 2),
 (1, '9782070585229', 1),
+(2, '9782070585229', 2),
 (1, '9782070615360', 1),
-(1, '9782070625178', 1),
+(2, '9782070615360', 2),
+(1, '9782075121385', 1),
+(2, '9782075121385', 2),
 (1, '9782075110709', 1),
-(1, '9782075121385', 1);
+(2, '9782075110709', 2),
+(1, '9782070625178', 1),
+(2, '9782070625178', 2);
 
 -- --------------------------------------------------------
 
@@ -145,9 +156,9 @@ CREATE TABLE IF NOT EXISTS `personne` (
 --
 
 INSERT INTO `personne` (`id`, `nom`, `prenom`) VALUES
-(1, 'Potter', 'Harry'),
-(2, 'Granger', 'Hermione'),
-(3, 'Weasley', 'Ron'),
+(1, 'Rowling', 'Joanne'),
+(2, 'Ménard', 'Jean-François'),
+(3, 'Walcker', 'Emily'),
 (4, 'Dumbledore', 'Albus'),
 (5, 'Jedusor', 'Tom'),
 (6, 'Dragonneau', 'Norbert'),
@@ -175,7 +186,9 @@ CREATE TABLE IF NOT EXISTS `role` (
 --
 
 INSERT INTO `role` (`id`, `libelle`) VALUES
-(1, 'Ecrivain');
+(1, 'Ecrivain'),
+(2, 'Traducteur'),
+(3, 'Illustrateur');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
