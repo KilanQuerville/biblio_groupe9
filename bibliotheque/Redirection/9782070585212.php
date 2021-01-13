@@ -1,11 +1,11 @@
 <?php
-require "biblio.php"
+require "../biblio.php"
 ?>
         <body>
-            <a href="Index.php">
-                <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
+            <a href="../Index.php">
+                <h1 id="image"><img src="../Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
                 
-            <img src="Imgbiblio/tome5.jpg"alt="tome 5" width="170" height="230" p style="float:left;">À quinze ans, Harry entre en cinquième année à Poudlard, mais il n’a jamais été si anxieux. L’adolescence, la perspective des examens et ces étranges cauchemars… Car Celui-Dont-On-Ne-Doit-Pas-Prononcer-Le-Nom est de retour. Le ministère de la Magie semble ne pas prendre cette menace au sérieux, contrairement à Dumbledore. La résistance s’organise alors autour de Harry qui va devoir compter sur le courage et la fidélité de ses amis de toujours…</p>
+            <img src="../Imgbiblio/9782070585212.jpg"alt="tome 5" width="170" height="230" p style="float:left;">À quinze ans, Harry entre en cinquième année à Poudlard, mais il n’a jamais été si anxieux. L’adolescence, la perspective des examens et ces étranges cauchemars… Car Celui-Dont-On-Ne-Doit-Pas-Prononcer-Le-Nom est de retour. Le ministère de la Magie semble ne pas prendre cette menace au sérieux, contrairement à Dumbledore. La résistance s’organise alors autour de Harry qui va devoir compter sur le courage et la fidélité de ses amis de toujours…</p>
            
         <?php
         

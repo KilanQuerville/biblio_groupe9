@@ -1,11 +1,11 @@
 <?php
-require "biblio.php"
+require "../biblio.php"
 ?>
     <body>
-        <a href="Index.php">
-            <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
+        <a href="../Index.php">
+            <h1 id="image"><img src="../Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
             
-        <img src="Imgbiblio/tome7.jpg" p style="float: left;"> Cette année, Harry a dix-sept ans et ne retourne pas à Poudlard. Avec Ron et Hermione, il se consacre à la dernière mission confiée par Dumbledore. Mais le Seigneur des Ténèbres règne en maître. Traqués, les trois fidèles amis sont contraints à la clandestinité. D'épreuves en révélations, le courage, les choix et les sacrifices de Harry seront déterminants dans la lutte contre les forces du Mal.
+        <img src="../Imgbiblio/9782070615360.jpg" p style="float: left;"> Cette année, Harry a dix-sept ans et ne retourne pas à Poudlard. Avec Ron et Hermione, il se consacre à la dernière mission confiée par Dumbledore. Mais le Seigneur des Ténèbres règne en maître. Traqués, les trois fidèles amis sont contraints à la clandestinité. D'épreuves en révélations, le courage, les choix et les sacrifices de Harry seront déterminants dans la lutte contre les forces du Mal.
 
         Découvrez le dernier tome des aventures de Harry Potter, lu avec talent par Dominique Collignon-Maurin. Le comédien prête à chaque personnage une voix propre. Un magnifique jeu d'acteur!</p>
      

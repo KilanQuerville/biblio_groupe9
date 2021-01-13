@@ -1,11 +1,11 @@
 <?php
-require "biblio.php"
+require "../biblio.php"
 ?>
         <body>
-            <a href="Index.php">
-                <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
+            <a href="../Index.php">
+                <h1 id="image"><img src="../Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
                 
-            <img src="Imgbiblio/quidditch.jpg" p style="float: left;">Les règles du jeu, l'apparition du Vif d'or, l'évolution des balais, les équipes mythiques du monde entier et les matchs qui ont fait l'histoire : «Le Quidditch à travers les âges» est un ouvrage incontournable de la Bibliothèque de Poudlard.
+            <img src="../Imgbiblio/9782070625178.jpg" p style="float: left;">Les règles du jeu, l'apparition du Vif d'or, l'évolution des balais, les équipes mythiques du monde entier et les matchs qui ont fait l'histoire : «Le Quidditch à travers les âges» est un ouvrage incontournable de la Bibliothèque de Poudlard.
 
             Les droits d'auteur de ce livre seront reversés à l'organisation caritative anglaise Comic Relief qui utilisera les sommes recueillies pour améliorer et changer des vies,une action encore plus importante et plus extraordinaire que la capture du Vif d'or en trois secondes et demie par Roderick Plumpton en 1921.</p>
             <?php

@@ -1,14 +1,13 @@
 <?php
-require "biblio.php"
+require "../biblio.php"
 ?>
     <body>
-        <a href="Index.php">
+        
+        <a href="../Index.php">
             <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
             
-        <img src="Imgbiblio/tome2.jpg"alt="tome 2" width="170"height="230" p style="float:left;">
-        Harry Potter fait une deuxième rentrée fracassante en voiture volante à l'école des sorciers. Cette deuxième année ne s'annonce pas de tout repos... surtout depuis qu'une étrange malédiction s'est abattue sur les élèves. Entre les cours de potion magique, les matchs de Quidditch et les combats de mauvais sorts, Harry trouvera-t-il le temps de percer le mystère de la Chambre des Secrets?
-            Un livre magique pour sorciers et sorcières confirmés!</p>
-            
+        <img src="../Imgbiblio/9782070585229.jpg"alt="tome 6" width="200" height="285" p style="float:left;">Dans un monde de plus en plus inquiétant, Harry se prépare à retrouver Ron et Hermione. Bientôt, ce sera la rentrée à Poudlard, avec les autres étudiants de sixième année. Mais pourquoi Dumbledore vient-il en personne chercher Harry chez les Dursley ? Dans quels extraordinaires voyages au cœur de la mémoire va-t-il l'entraîner ?</p>
+       
         <?php
         
         $link = mysqli_connect("localhost","root","","bibliotheque");
@@ -20,7 +19,7 @@ require "biblio.php"
         }
         
         
-        $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070584642  AND livre.editeur=editeur.id JOIN genre ON livre.isbn=9782070584642 AND livre.genre=genre.id   ;";
+        $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn= 9782070585229  AND livre.editeur=editeur.id JOIN genre ON livre.isbn=9782070585229  AND livre.genre=genre.id   ;";
          
          
         $result = mysqli_query($link,$req);
@@ -30,7 +29,7 @@ require "biblio.php"
         if($result){
             while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
                 
-        echo "<p> Isbn:" . $row["isbn"] ;
+        echo "<p>Isbn:" . $row["isbn"] ;
         echo " - Titre:" . $row["titre"] ;
         echo " - Editeur:" . $row["libelle"] ;
         echo " - Annee:" . $row["annee"] ;
@@ -41,7 +40,5 @@ require "biblio.php"
         }
        
         ?> 
-        
-            
     </body>
 </html>

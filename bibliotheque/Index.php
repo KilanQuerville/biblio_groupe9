@@ -22,7 +22,8 @@
         }
         
         
-        $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070584628    AND livre.editeur=editeur.id   ;";
+        $req = "SELECT * FROM livre JOIN editeur  ON editeur.id=livre.editeur
+        JOIN auteur ON auteur.idLivre=livre.isbn JOIN personne ON personne.id=auteur.idPersonne WHERE idRole = 1;";
         
          
         $result = mysqli_query($link,$req);
@@ -31,156 +32,26 @@
     
         if($result){
             while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                ?>
+                    ?><div><a href=<?php echo "./Redirection/" . $row["isbn"] . ".php"?>>
+          <div class=zoom><img src=<?php echo "(../../Imgbiblio/" . $row["isbn"] . ".jpg"?> alt="Harry Potter"></div></a><?php
+
+                    echo "<p>Nom : " . $row["nom"] . "</p>";
+                    echo "<p>Prenom : " . $row["prenom"] . "</p>";
+                    echo "<p>libelle : " . $row["libelle"] . "</p>";
+                    echo "<p>Titre : " . $row["titre"] . "</p>";
+                    echo "<p>Isbn : " . $row["isbn"] . "</p>";
+                    echo "<p>Date de publication : " . $row["annee"] . "</p>";
+            }
+            mysqli_free_result($result);
+
+        }mysqli_close($link);
+                ?></div>
     <p>Dans cette bibliothèque,vous trouverez les ouvrages des différentes oeuvres d'Harry Potter et des Animaux Fantastiques écrites par l'écrivaine J.K Rowling.</p>
     <p>Voici la liste des dix oeuvres que J.K Rowling a écrites ci-dessous:</p>
 
-          <div>
-        <?php
-           echo "<a href=" .$row["isbn"] . "><img src=" . $row["image"] . "></img></a>";
-?>
-
-    <?php
-            }
-        }
-?>
-<?php
-$req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070584642    AND livre.editeur=editeur.id   ;";
+          
         
-         
-        $result = mysqli_query($link,$req);
-        //var_dump($result);
-        
-    
-        if($result){
-            while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                
-
-               echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-            }}
-    ?>
-    <?php
-    $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070584925   AND livre.editeur=editeur.id   ;";
-            
-             
-            $result = mysqli_query($link,$req);
-            //var_dump($result);
-            
-        
-            if($result){
-                while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                    
-    
-                   echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-                }}
-        ?>
-        <?php
-        $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070585205   AND livre.editeur=editeur.id   ;";
-                
-                 
-                $result = mysqli_query($link,$req);
-                //var_dump($result);
-                
-            
-                if($result){
-                    while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                        
-        
-                       echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-                    }}
-            ?>
-            <?php
-            $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070585212   AND livre.editeur=editeur.id   ;";
-                    
-                     
-                    $result = mysqli_query($link,$req);
-                    //var_dump($result);
-                    
-                
-                    if($result){
-                        while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                            
-            
-                           echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-                        }}
-                ?>
-                <?php
-                $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070585229   AND livre.editeur=editeur.id   ;";
-                        
-                         
-                        $result = mysqli_query($link,$req);
-                        //var_dump($result);
-                        
-                    
-                        if($result){
-                            while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                                
-                
-                               echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-                            }}
-                    ?>
-                    <?php
-                    $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070615360   AND livre.editeur=editeur.id   ;";
-                            
-                             
-                            $result = mysqli_query($link,$req);
-                            //var_dump($result);
-                            
-                        
-                            if($result){
-                                while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                                    
-                    
-                                   echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-                                }}
-                        ?>
-                        <?php
-                        $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782075121385   AND livre.editeur=editeur.id   ;";
-                                
-                                 
-                                $result = mysqli_query($link,$req);
-                                //var_dump($result);
-                                
-                            
-                                if($result){
-                                    while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                                        
-                        
-                                       echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-                                    }}
-                            ?>
-                            <?php
-                            $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782075110709   AND livre.editeur=editeur.id   ;";
-                                    
-                                     
-                                    $result = mysqli_query($link,$req);
-                                    //var_dump($result);
-                                    
-                                
-                                    if($result){
-                                        while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                                            
-                            
-                                           echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-                                        }}
-                                ?>
-                                <?php
-                                $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn=9782070625178   AND livre.editeur=editeur.id   ;";
-                                        
-                                         
-                                        $result = mysqli_query($link,$req);
-                                        //var_dump($result);
-                                        
-                                    
-                                        if($result){
-                                            while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                                                
-                                
-                                               echo "<a href=" .$row["isbn"] . "><img src=". $row["image"] . "></img></a>";
-                                            }}
-                                    ?>
-        
-          </div>
+          
     <a href="https://wizardingworld.warnerbros.fr/store/baguette-magique-d-albus-dumbledore-avec-boite-ollivander.html"><p>Surtout,n'oubliez pas que c'est la baguette qui choisit le sorcier</p></a>
 
         </body>

@@ -1,13 +1,13 @@
 <?php
-require "biblio.php"
+require "../biblio.php"
 ?>
     <body>
-
-        <a href="Index.php">
-            <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
+        <a href="../Index.php">
+            <h1 id="image"><img src="../Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
             
-        <img src="Imgbiblio/tome1animauxfant.png" width="200" height="300" p style="float: left;">Il est rare qu'une maison de sorciers ne compte pas dans sa bibliothèque un exemplaire des "Animaux fantastiques". Désormais et pour une période limitée dans le temps, les Moldus vont avoir à leur tour la possibilité d'apprendre où vit le Quintaped, ce que mange le Puffskein et pourquoi il vaut mieux ne pas laisser dans le jardin une soucoupe de lait destinée à un Knarl…</p>
-        
+        <img src="../Imgbiblio/9782075110709.png" width="200" height="260" p style="float: left;">Quelques mois après sa capture, le célèbre sorcier Gellert Grindelwald s'évade comme il l'avait promis et de façon spectaculaire. Réunissant de plus en plus de partisans, il est à l'origine d'attaque d'humains normaux par des sorciers et seul celui qu'il considérait autrefois comme un ami, Albus Dumbledore, semble capable de l'arrêter.</p>
+        <p>
+     
         <?php
         
         $link = mysqli_connect("localhost","root","","bibliotheque");
@@ -19,7 +19,8 @@ require "biblio.php"
         }
         
         
-        $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn= 9782075121385   AND livre.editeur=editeur.id JOIN genre ON livre.isbn=9782075121385  AND livre.genre=genre.id   ;";
+        $req = " SELECT * FROM `livre`   JOIN editeur ON  livre.isbn= 9782075110709   AND livre.editeur=editeur.id JOIN genre ON livre.isbn=9782075110709  AND livre.genre=genre.id   ;";
+         
          
         $result = mysqli_query($link,$req);
         //var_dump($result);
@@ -38,6 +39,5 @@ require "biblio.php"
             
         }
         ?>
-            
     </body>
 </html>
