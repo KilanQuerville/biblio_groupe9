@@ -22,13 +22,14 @@
         }
         
         
-        $req = "SELECT * FROM livre JOIN editeur  ON editeur.id=livre.editeur
-        JOIN auteur ON auteur.idLivre=livre.isbn JOIN personne ON personne.id=auteur.idPersonne WHERE idRole = 1;";
+        $req = "SELECT  * FROM livre  JOIN editeur  ON editeur.id=livre.editeur
+          JOIN auteur ON auteur.idLivre=livre.isbn  JOIN personne ON personne.id=auteur.idPersonne WHERE idRole=1
+            ;";
         
          
         $result = mysqli_query($link,$req);
         //var_dump($result);
-        
+        //INSERT INTO livre(`isbn`,`titre`,`editeur`,`annee`,`genre`,`nbpages`)VALUES("9782070615360","Harry Potter et les Reliques de la Mort",1,2007,2,816);
     
         if($result){
             while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
@@ -41,11 +42,12 @@
                     echo "<p>Titre : " . $row["titre"] . "</p>";
                     echo "<p>Isbn : " . $row["isbn"] . "</p>";
                     echo "<p>Date de publication : " . $row["annee"] . "</p>";
+                    echo "</div>";
             }
             mysqli_free_result($result);
 
         }mysqli_close($link);
-                ?></div>
+                ?>
     <p>Dans cette bibliothèque,vous trouverez les ouvrages des différentes oeuvres d'Harry Potter et des Animaux Fantastiques écrites par l'écrivaine J.K Rowling.</p>
     <p>Voici la liste des dix oeuvres que J.K Rowling a écrites ci-dessous:</p>
 
