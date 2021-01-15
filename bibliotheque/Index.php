@@ -9,9 +9,13 @@
     <a href="baguettemagique.php">
     <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
     <h2>Bienvenue sur notre bibliothèque La baguette magique</h2>
+    
     <?php
     require "nav.php"
     ?>
+    <p>Dans cette bibliothèque,vous trouverez les ouvrages des différentes oeuvres d'Harry Potter et des Animaux Fantastiques écrites par l'écrivaine J.K Rowling.</p>
+    <p>Voici la liste des dix oeuvres que J.K Rowling a écrites ci-dessous:</p>
+
     <?php
     $link = mysqli_connect("localhost","root","","bibliotheque");
         if(!$link){
@@ -23,7 +27,7 @@
         
         
         $req = "SELECT  * FROM livre  JOIN editeur  ON editeur.id=livre.editeur
-          JOIN auteur ON auteur.idLivre=livre.isbn  JOIN personne ON personne.id=auteur.idPersonne WHERE idRole=1
+          JOIN auteur ON auteur.idLivre=livre.isbn  JOIN personne ON personne.id=auteur.idPersonne WHERE idRole=1 ORDER BY isbn
             ;";
         
          
@@ -48,9 +52,7 @@
 
         }mysqli_close($link);
                 ?>
-    <p>Dans cette bibliothèque,vous trouverez les ouvrages des différentes oeuvres d'Harry Potter et des Animaux Fantastiques écrites par l'écrivaine J.K Rowling.</p>
-    <p>Voici la liste des dix oeuvres que J.K Rowling a écrites ci-dessous:</p>
-
+    
           
         
           

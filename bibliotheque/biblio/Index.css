@@ -26,8 +26,12 @@ div > a {
     border: 2px solid rgb(79,185,227);
   }  
 html{
-    background-size: 100% 110%;
+    background-size:100% 100%;
+    
+    margin: 0 auto;
 background-image: url("../Imgbiblio/fond.jpg");
+background-attachment: fixed;
+background-repeat: no-repeat;
 }
 p{
     color:green;
