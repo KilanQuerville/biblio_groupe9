@@ -1,5 +1,5 @@
 <?php
-    $CONFIG=array("root_path"=>"/biblio_groupe9_etape4/bibliotheque/",
+    $CONFIG=array("root_path"=>"/biblio_groupe9_etape5/bibliotheque/",
     "dbname"=>"bibliotheque",
     "dbuser"=>"root",
     "dbpwd"=>"",
