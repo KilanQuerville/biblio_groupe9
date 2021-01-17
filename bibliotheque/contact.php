@@ -13,7 +13,7 @@
 
             <br>
 
-            <label for="mail"> Courriel:</label>
+            <label for="mail"> Adresse email:</label>
             <input type="mail" id="mail" name="client_mail"><br>
             </fieldset>
             <label for="objets">les raisons :</label>

@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 h2{
     color:blue;
     font-size: 3em;
@@ -7,6 +10,10 @@ h2{
 #image{
     font-size:1em;
     text-align:normal;
+
+}
+.logo{
+  width:100%;
 }
 div{
     border:1px solid black;
@@ -54,3 +61,6 @@ nav ul {
     text-align: center;
     flex: 1;
   }
+   @media (min-width:601px) and (max-width:992px){
+  
+   }

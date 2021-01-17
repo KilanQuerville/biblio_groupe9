@@ -7,7 +7,7 @@
     <body>
     <title>La Baguette magique</title>
     <a href="baguettemagique.php">
-    <h1 id="image"><img src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
+    <h1 id="image"><img  class="logo" src="Imgbiblio/logo.jpg" alt="baguette magique"height="230" width="1980"></img></h1></a>
     <h2>Bienvenue sur notre bibliothèque La baguette magique</h2>
     
     <?php
@@ -24,6 +24,11 @@
             echo "Erreur de débogage :".mysqli_connect_erreur().PHP_EOL;
             exit;
         }
+        if(!mysqli_set_charset($link,"utf8mb4")){
+            echo mysqli_error($link);
+            exit();
+        }
+        
         
         
         $req = "SELECT  * FROM livre  JOIN editeur  ON editeur.id=livre.editeur
@@ -37,7 +42,7 @@
     
         if($result){
             while($row = mysqli_fetch_array ($result,MYSQLI_ASSOC)){
-                    ?><div><a href=<?php echo "./Redirection/" . $row["isbn"] . ".php"?>>
+                    ?><div><a href="detail.php?isbn=<?php echo $row["isbn"]?>">
           <div class=zoom><img src=<?php echo "(../../Imgbiblio/" . $row["isbn"] . ".jpg"?> alt="Harry Potter"></div></a><?php
 
                     echo "<p>Nom : " . $row["nom"] . "</p>";

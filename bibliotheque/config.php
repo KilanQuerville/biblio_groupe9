@@ -1,0 +1,9 @@
+<?php
+    $CONFIG=array("root_path"=>"/biblio_groupe9_etape4/bibliotheque/",
+    "dbname"=>"bibliotheque",
+    "dbuser"=>"root",
+    "dbpwd"=>"",
+    "dbhost"=>"localhost",
+    "dbport"=>"3306",
+    ); 
+    ?>
